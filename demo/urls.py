@@ -1,8 +1,10 @@
 from django import views
 from django.urls import path
-from .views import Call,PlayAudio
+from .views import call, playAudio, interact, callback
 
 urlpatterns = [
-    path('calls',Call),
-    path('play',PlayAudio),
+    path("calls", call),
+    path("play", playAudio),
+    path("interact", interact),
+    path("recording/callback", callback),
 ]
